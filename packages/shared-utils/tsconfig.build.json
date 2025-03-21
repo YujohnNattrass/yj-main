@@ -7,16 +7,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "composite": true,
+    "outDir": "dist",
+    "rootDir": "src",
     "declaration": true
   },
-  "references": [
-    { "path": "./packages/shared-utils" },
-    { "path": "./packages/weather-agent" }
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    ".mastra"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

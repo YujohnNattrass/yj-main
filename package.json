@@ -1,23 +1,20 @@
 {
-  "name": "yj-main",
+  "name": "yj-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A test monorepo for Mastra projects",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mastra dev",
-    "build": "echo \"hello world\""
+    "dev": "pnpm --filter weather-agent dev",
+    "build": "pnpm -r build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
-    "@ai-sdk/openai": "^1.2.7",
-    "@mastra/core": "^0.6.3",
-    "mastra": "^0.4.2",
-    "zod": "^3.24.2"
-  },
   "devDependencies": {
     "@types/node": "^22.13.10",
     "tsx": "^4.19.3",
