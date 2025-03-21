@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm --filter weather-agent dev"
+    "dev": "pnpm --filter weather-agent dev",
+    "build": "echo \"Building packages...\" && pnpm --filter shared-utils build && pnpm --filter weather-agent build && echo \"Build completed successfully!\""
   },
   "keywords": [],
   "author": "",
